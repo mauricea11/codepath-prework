@@ -6,7 +6,7 @@ Submitted by: **Maurice August**
 
 Time spent: **4** hours spent in total
 
-Link to project: https://glitch.com/edit/#!/thinkable-sage-existence?path=style.css%3A10%3A22
+Link to project: https://glitch.com/edit/#!/thinkable-sage-existence
 
 ## Required Functionality
 
@@ -38,10 +38,10 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough (GIF)
 
-![](https://im2.ezgif.com/tmp/ezgif-2-bda0d23d05.gif)
-![](https://im2.ezgif.com/tmp/ezgif-2-9b8f8eee7f.gif)
-![](https://im2.ezgif.com/tmp/ezgif-2-4388afa8bf.gif)
-![](https://im2.ezgif.com/tmp/ezgif-2-c88e42ac0f.gif)
+![](https://user-images.githubusercontent.com/85422454/159141421-3cd59169-c024-44ba-aa8d-dcf6bdad2b32.gif))
+![](https://user-images.githubusercontent.com/85422454/159141439-033b48e4-8ccf-4261-a34f-2d0464134682.gif)
+![](https://user-images.githubusercontent.com/85422454/159141444-5eafad38-c24a-4b6f-ae0f-6fdd4a6d6147.gif)
+![](https://user-images.githubusercontent.com/85422454/159141449-1dfd0ba0-6c73-458d-a8e3-be05430c8212.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
@@ -65,12 +65,12 @@ In continuation of the first one, another feature I would add is the ability to 
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording] https://www.loom.com/share/54f32050535949ae9ae797c17e887388
 
 
 ## License
 
-    Copyright [Maurice August]
+    Copyright Maurice August
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
