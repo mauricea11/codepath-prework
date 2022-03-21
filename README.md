@@ -4,7 +4,7 @@
 
 Submitted by: **Maurice August**
 
-Time spent: **4** hours spent in total
+Time spent: **6** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/thinkable-sage-existence
 
@@ -34,11 +34,12 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+- [X] An alert telling the user how many tries they have left
+- [X] An easy mode and hard mode setting
 
 ## Video Walkthrough (GIF)
 
-![](https://user-images.githubusercontent.com/85422454/159141421-3cd59169-c024-44ba-aa8d-dcf6bdad2b32.gif))
+![](https://user-images.githubusercontent.com/85422454/159141421-3cd59169-c024-44ba-aa8d-dcf6bdad2b32.gif)
 ![](https://user-images.githubusercontent.com/85422454/159141439-033b48e4-8ccf-4261-a34f-2d0464134682.gif)
 ![](https://user-images.githubusercontent.com/85422454/159141444-5eafad38-c24a-4b6f-ae0f-6fdd4a6d6147.gif)
 ![](https://user-images.githubusercontent.com/85422454/159141449-1dfd0ba0-6c73-458d-a8e3-be05430c8212.gif)
