@@ -36,6 +36,7 @@ The following **additional** features are implemented:
 
 - [X] An alert telling the user how many tries they have left
 - [X] An easy mode and hard mode setting
+- [X] A record of the number of wins the user has
 
 ## Video Walkthrough (GIF)
 
