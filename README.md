@@ -4,7 +4,7 @@
 
 Submitted by: **Maurice August**
 
-Time spent: **6** hours spent in total
+Time spent: **8** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/thinkable-sage-existence
 
