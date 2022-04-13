@@ -4,7 +4,7 @@
 
 Submitted by: **Maurice August**
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/thinkable-sage-existence
 
@@ -29,7 +29,7 @@ The following **optional** features are implemented:
 * [X] Computer picks a different pattern each time the game is played
 * [X] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [X] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [X] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
@@ -37,6 +37,7 @@ The following **additional** features are implemented:
 - [X] An alert telling the user how many tries they have left
 - [X] An easy mode and hard mode setting
 - [X] A record of the number of wins the user has
+- [X] User can change background color
 
 ## Video Walkthrough (GIF)
 

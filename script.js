@@ -4,6 +4,8 @@ const nextClueWaitTime = 1000; //how long to wait before starting playback of th
 const countdownElement = document.getElementById("countdown");
 const time = 4;
 const timeElement = document.getElementById("timer");
+const backgroundColors = ['#38182F', '#2F394D', '#D1B490', '#291711', '#474b24', 
+                          '#333333', '#2D3047'];
 
 // global variables
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
@@ -21,6 +23,13 @@ var record = [];
 var position = 0; //keeps track of win array position
 let seconds = time * 60;
 var interval;
+
+//function to change background
+function backgroundChange(){
+  var getColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+  document.body.style.backgroundColor = getColor;
+  
+}
 
 // timer function
 function startTimer(){
@@ -101,39 +110,107 @@ function stopGame() {
   document.getElementById("startBtn").classList.remove("hidden");
 }
 
+var audio1 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/zapsplat_cartoon_arrow_bow_release_whoosh_past_hit_target_with_twang_002_18119.mp3?v=1649820399868');
+var audio2 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/ES_Bell%20Ring%20Desk%201%20-%20SFX%20Producer.mp3?v=1648802457277');
+var audio3 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/zapsplat_cartoon_anime_power_up_high_pitched_laser_77707.mp3?v=1649820305339');
+var audio4 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/mixkit-arcade-retro-game-over-213.wav?v=1648802584720');
+var audio5 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/mixkit-fast-small-sweep-transition-166.wav?v=1648802587048');
+var audio6 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/mixkit-cinematic-transition-swoosh-heartbeat-trailer-488.wav?v=1648802639557');
+var audio7 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/zapsplat_cartoon_anime_magical_laser_burst_77706.mp3?v=1649819634058');
+var audio8 = new Audio('https://cdn.glitch.global/858877f6-4b70-4777-a945-87cf580bf1be/zapsplat_food_plastic_packet_salad_bowl_short_shake_salad_contents_inside_001_82874.mp3?v=1649819636922');
+
 // Sound Synthesis Functions
 const freqMap = {
-  1: 250,
+  1: 360,
   2: 329.6,
   3: 398,
   4: 462.2,
   5: 350,
   6: 400,
   7: 290,
-  8: 300,
+  8: 300
 };
 
-function playTone(btn, len) {
-  o.frequency.value = freqMap[btn];
-  g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
-  context.resume();
-  tonePlaying = true;
-  setTimeout(function () {
-    stopTone();
-  }, len);
-}
-function startTone(btn) {
-  if (!tonePlaying) {
-    context.resume();
-    o.frequency.value = freqMap[btn];
-    g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
-    context.resume();
-    tonePlaying = true;
+//play custom audio
+function playSound(btn){
+  
+  if(btn == 1){
+    audio1.play();
+  }
+  else if(btn == 2){
+    audio2.play();
+  }
+  else if (btn == 3){
+    audio3.play();
+  }
+  else if (btn == 4){
+    audio4.play();
+  }
+  else if (btn == 5){
+    audio5.play();
+  }
+  else if (btn == 6){
+    audio6.play();
+  }
+  else if (btn == 7){
+    audio7.play();
+  }
+  else{
+    audio8.play();
   }
 }
+
+
+//**possible features**
+// - user can change color of game
+// - add background music to game
+
+
+// function playTone(btn, len) {
+  
+//   //sequence of frequencies
+  
+//   o.frequency.value = freqMap[btn];
+ 
+
+  
+//   g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
+//   context.resume();
+//   tonePlaying = true;
+//   setTimeout(function () {
+//     stopTone();
+//   }, len);
+// }
+// function startTone(btn) {
+//   if (!tonePlaying) {
+//     context.resume();
+    
+//     o.frequency.value = freqMap[btn];
+    
+//     g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
+//     context.resume();
+//     tonePlaying = true;
+//   }
+// }
+
+//stop audio
 function stopTone() {
-  g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
-  tonePlaying = false;
+  audio1.pause();
+  audio1.currentTime = 0;
+  audio2.pause();
+  audio2.currentTime = 0;
+  audio3.pause();
+  audio3.currentTime = 0;
+  audio4.pause();
+  audio4.currentTime = 0;
+  audio5.pause();
+  audio5.currentTime = 0;
+  audio6.pause();
+  audio6.currentTime = 0;
+  audio7.pause();
+  audio7.currentTime = 0;
+  audio8.pause();
+  audio8.currentTime = 0;
 }
 
 function lightButton(btn) {
@@ -146,7 +223,7 @@ function clearButton(btn) {
 function playSingleClue(btn) {
   if (gamePlaying) {
     lightButton(btn);
-    playTone(btn, clueHoldTime);
+    playSound(btn);
     setTimeout(clearButton, clueHoldTime, btn);
   }
 }

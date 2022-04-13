@@ -29,10 +29,13 @@
       <label for="hard">Hard</label>
       <input type="radio" id="hard" name="mode" value="hard" />
     </div>
-
+    
+    <button id="chgBackground" onclick="backgroundChange()">Change Background!</button>
+    <br>
+    <br>
     <button id="startBtn" onclick="startGame()">Start</button>
     <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
-
+    
     <!--  countdown timer    -->
     <p id = "timer" class = "hidetimer">
       0:00
@@ -43,49 +46,49 @@
       <button
         id="button1"
         onclick="guess(1)"
-        onmousedown="startTone(1)"
+        onmousedown="playSound(1);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button2"
         onclick="guess(2)"
-        onmousedown="startTone(2)"
+        onmousedown="playSound(2);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button3"
         onclick="guess(3)"
-        onmousedown="startTone(3)"
+        onmousedown="playSound(3);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button4"
         onclick="guess(4)"
-        onmousedown="startTone(4)"
+        onmousedown="playSound(4);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button5"
         onclick="guess(5)"
-        onmousedown="startTone(5)"
+        onmousedown="playSound(5);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button6"
         onclick="guess(6)"
-        onmousedown="startTone(6)"
+        onmousedown="playSound(6);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button7"
         onclick="guess(7)"
-        onmousedown="startTone(7)"
+        onmousedown="playSound(7);"
         onmouseup="stopTone()"
       ></button>
       <button
         id="button8"
         onclick="guess(8)"
-        onmousedown="startTone(8)"
+        onmousedown="playSound(8);"
         onmouseup="stopTone()"
       ></button>
     </div>
